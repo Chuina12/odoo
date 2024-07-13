@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="website.slider" name="Slider Template" inherit_id="website.layout">
+        <xpath expr="//div[@id='wrapwrap']" position="inside">
+            <div class="s_slider_main">
+                <div class="s_slider">
+                    <t t-foreach="records" t-as="record">
+                        <div class="s_slide">
+                            <img t-att-src="record.image_url" alt="Slide Image"/>
+                            <div class="s_slide_text">
+                                <t t-foreach="record.text_ids" t-as="text">
+                                    <p><t t-esc="text.name"/></p>
+                                </t>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

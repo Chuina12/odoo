@@ -1,0 +1,26 @@
+<odoo>
+  <template id="partner_slider_template" inherit_id="web.assets_common" name="Partner Slider Assets">
+    <xpath expr="." position="inside">
+      <link rel="stylesheet" href="/partner_slider/static/src/css/partner_slider.css"/>
+      <script type="text/javascript" src="/partner_slider/static/src/js/partner_slider.js"></script>
+    </xpath>
+  </template>
+
+  <template id="partner_slider_view">
+    <div class="partner-slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/partner_slider/static/src/img/partner1.png" alt="Partner 1"/>
+            <div class="caption">Partner 1</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/partner_slider/static/src/img/partner2.png" alt="Partner 2"/>
+            <div class="caption">Partner 2</div>
+          </div>
+          <!-- Ajoutez d'autres slides selon vos besoins -->
+        </div>
+      </div>
+    </div>
+  </template>
+</odoo>

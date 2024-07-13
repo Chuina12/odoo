@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_website_slider_page_form" model="ir.ui.view">
+        <field name="name">website.slider.page.form</field>
+        <field name="model">website.slider.page</field>
+        <field name="arch" type="xml">
+            <form string="Slider Page">
+                <sheet>
+                    <div>
+                        <field name="name"/>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <field name="text_ids" widget="many2many_tags"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
